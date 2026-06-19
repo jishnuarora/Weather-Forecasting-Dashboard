@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+
+    transition:1s;
+}
+
+.container{
+
+    width:420px;
+
+    background:
+    rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    color:white;
+
+    text-align:center;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.3);
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+}
+
+.search-box button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-weight:600;
+}
+
+.search-box button:hover{
+    transform:scale(1.05);
+}
+
+.weather-box{
+    margin-top:20px;
+}
+
+.weather-box img{
+    width:120px;
+}
+
+#temp{
+    font-size:3rem;
+}
+
+#description{
+    text-transform:capitalize;
+    margin-bottom:15px;
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:20px;
+}
+
+.card{
+
+    background:
+    rgba(255,255,255,.08);
+
+    padding:12px;
+
+    border-radius:12px;
+}
+
+.card h3{
+    font-size:.9rem;
+    margin-bottom:5px;
+}
+
+.loader{
+
+    width:50px;
+    height:50px;
+
+    border:5px solid white;
+
+    border-top:5px solid transparent;
+
+    border-radius:50%;
+
+    margin:20px auto;
+
+    display:none;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
