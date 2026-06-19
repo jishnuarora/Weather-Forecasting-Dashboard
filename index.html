@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌤 Weather Dashboard</h1>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter city..."
+        >
+
+        <button onclick="getWeather()">
+            Search
+        </button>
+    </div>
+
+    <div id="loader" class="loader"></div>
+
+    <div class="weather-box">
+
+        <h2 id="cityName"></h2>
+
+        <img id="icon" src="" alt="">
+
+        <h1 id="temp"></h1>
+
+        <p id="description"></p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Feels Like</h3>
+                <p id="feelsLike"></p>
+            </div>
+
+            <div class="card">
+                <h3>Humidity</h3>
+                <p id="humidity"></p>
+            </div>
+
+            <div class="card">
+                <h3>Wind</h3>
+                <p id="wind"></p>
+            </div>
+
+            <div class="card">
+                <h3>Pressure</h3>
+                <p id="pressure"></p>
+            </div>
+
+            <div class="card">
+                <h3>Visibility</h3>
+                <p id="visibility"></p>
+            </div>
+
+            <div class="card">
+                <h3>Sunrise</h3>
+                <p id="sunrise"></p>
+            </div>
+
+            <div class="card">
+                <h3>Sunset</h3>
+                <p id="sunset"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>>
